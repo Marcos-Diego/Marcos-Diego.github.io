@@ -4,10 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/normalize.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portifólio Git</title>
 </head>
-<body>
-    
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font:sans">
+    <div class="container mx-auto p-4">
+        <nav class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                <a href="#">Marcos Diego.dev</a>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#sobre"
+                class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Sobre</a></li>
+                <li><a href="#habilidades"
+                class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"> Habilidades</a></li>
+                <li><a href="#projetos"
+                class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Projetos</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button class="text-gray-900 dark:text-gray-100">
+                    <svg class="w-9 h-9" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                    xmlns="[https://w3.org/2000/svg] (https://w3.org/2000/svg)">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- F de NavBar-->
+        <header class="text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-gray-900 dark:text-white">Desenvolvidor Web
+                Full-stack</h1>
+            <p class="text-lg md-:text-xl text-gray-600 dark:text-gray-400 max-w-auto mb-8">Transformando ideias em soluções
+                digitais robustas e escalaveis, do front-end ao back-end.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#projetos" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700
+                transition-colors duration-300">Ver Projetos</a>
+                <a href="#contato" class="bg-gray-200 dark:bg-indigo-700 text-gray-900 dark:text-gray-100 font-semibold py-3 px-6
+                rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300">Contato</a>
+            </div>    
+        </header>
+        <section id="sobre" class="py-20">
+            <div class="grid md:grid-cols-2 gap-12 md:gap 16 items-center">
+                <div class="flex justify-center">
+                    <img src="img/Eu(1).webp" alt="Foto do Desenvolvidor" class="rounded-lg shadow-xl w-full max-w-sm">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Sobre Mim</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Olá! Sou um Desenvolvidor 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error,sapiente ipsam, ipsa natus aut, est 
+                        dolore nulla dolores recusandae soluta cumque impedit eligendi alias temporibus distinctio vel aspernatur at!</p>
+                        <p class="text-gray-600 dark:text-gray-400">Meu objetivo Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Commodi natus, dignissimos magni sunt rem possimus quas dolore maxime beatae a distinctio dicta laudantium</p>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class="py-20 text-center">
+            <h2 class="text-3xl font-bold mb-12 text-gray-900 dark:text-white">Minhas Habilidades</h2>
+            <div class="grid grind-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grind-cols-6 gap-8">
+                <div class="flex flex-col items-center p-4">
+                    <img src="img/html-5-svgrepo-com.svg" alt="Icone do HTML5" class="w-16 h-16 mb-2">
+                    <span class="font-semibold">HTML5</span>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <img src="img/css-3-svgrepo-com.svg" alt="Icone do CSS3" class="w-16 h-16 mb-2">
+                    <span class="font-semibold">CSS3</span>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <img src="img/javascript-svgrepo-com.svg" alt="Icone do javaScript" class="w-16 h-16 mb-2">
+                    <span class="font-semibold">javaScript</span>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="py-20 bg-gray-100 dark:bg-gray-950">
+            <div class="container mx-auto p-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Meus Proletos</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all 
+                    duration-300 ease-in -out hover:scale-105 hover:shadow-xl">
+                        <img src="img/sapo 1 (1).webp" alt="Projeto 1" 
+                        class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Nome do Projeto 1</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Um breve desscrição</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 
+                                text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                                <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200
+                                text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all
+                    duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                    <img src="img/sapo 2.jpg" alt="Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Projeto 2</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Uma breve desscrição</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 dark:bg-red-900 text-red-800  dark:text-red-200 text-xs
+                            font-semibold px-2.5 py-0.5 rounded-full">Angular</span>
+                            <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200
+                            text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center py-8 border-t border-gray-200 dark:border-gray-700 mt-20">
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="#" class="text-gray-500 hover:opacity-75 transition-opacity duration-300"
+                aria-label="LinkedIn">
+                    <img src="img/linkedin-rounded-svgrepo-com.svg" alt="LinkedIn" class="w-6 h-6 dark:invert">
+                </a>
+                <a href="#" class="text-gray-500 hover:opacity-75 transition-opacity duration-300"
+                aria-label="GitHub">
+                    <img src="img/github-142-svgrepo-com.svg" alt="GitHub" class="w-6 h-6 dark:invert">
+                </a>
+            </div>
+            <p class="text-gray-sm text-gray-600 dark:text-gray-400">&copy; 2025 Marcos Diego. Todos os direitos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>
