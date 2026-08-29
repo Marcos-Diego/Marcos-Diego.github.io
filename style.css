@@ -1,0 +1,17 @@
+#proj article {
+    display: inline-block;
+    max-width: 15.68rem;
+}
+
+#proj article div {
+    background-color: #545454;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+#proj img {
+    width: 15.68rem;
+    height: 14.5rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
